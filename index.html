@@ -4,15 +4,44 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
   </head>
   <body>
+    <header>
+      <div class="container">
+        <h1>Tic Tac Toe</h1>
+      </div>
+    </header>
     <div class="container">
       <ul class="spot-row">
         <li class="spot"></li>
         <li class="spot"></li>
         <li class="spot"></li>
       </ul>
-
+      <ul class="spot-row">
+        <li class="spot"></li>
+        <li class="spot"></li>
+        <li class="spot"></li>
+      </ul>
+      <ul class="spot-row">
+        <li class="spot"></li>
+        <li class="spot"></li>
+        <li class="spot"></li>
+      </ul>
     </div>
+    <div class="score clearfix">
+      <div class="container">
+        <h2 class="player-1">Player One: <span class="p-one">0</span></h2>
+        <h2 class="player-2">Player Two: <span class="p-two">0</span></h2>
+      </div>
+    </div>
+    <div class="game-over">
+      <div class="container">
+        <h1>Game Over!</h1>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
