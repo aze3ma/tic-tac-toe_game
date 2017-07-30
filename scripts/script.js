@@ -13,7 +13,7 @@ let won = false;
 console.log(spanScore1);
 console.log(spanScore2);
 
-let checkWinner = function(moves) {
+let checkWinner = (moves) => {
   let win = [
     [0, 1, 2],
     [3, 4, 5],
@@ -39,7 +39,7 @@ let checkWinner = function(moves) {
   return winHappened;
 };
 
-let resetGame = function() {
+let resetGame = () => {
   for (let i = 0; i < spots.length; i++) {
     spots[i].classList.remove('spot-x');
     spots[i].classList.remove('flip-x');
@@ -52,9 +52,9 @@ let resetGame = function() {
   won = false;
 };
 
-let gameOver = function() {
+let gameOver = () => {
     gameOverDiv.style.display = 'block';
-    setTimeout(function() {
+    setTimeout(() => {
       resetGame();
       gameOverDiv.style.display = 'none';
     }, 1500);
